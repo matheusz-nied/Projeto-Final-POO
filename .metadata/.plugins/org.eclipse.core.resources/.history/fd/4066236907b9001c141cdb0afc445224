@@ -10,11 +10,8 @@ public class TestAcademia {
 	@Test
 	public void test1() {
 		Professor pf3 = new Professor("Jose", "Azul", 0, 100.0);
-		
 		pf3.setQuantidadeAulas(2);
-		
 		assertEquals(0, pf3.getSalario(), 200);
-		
 		System.out.println("Passou Teste 1 - primeira");
 	}
 
