@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/home/sehmer/Documents/EMC/Orientacao_Objetos/Projeto_Final/.metadata/.plugins/org.eclipse.jdt.core
+3190603908.index
+2202939237.index
+646308851.index

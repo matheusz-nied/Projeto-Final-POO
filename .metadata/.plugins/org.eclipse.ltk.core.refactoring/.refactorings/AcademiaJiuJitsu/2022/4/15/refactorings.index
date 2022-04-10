@@ -1,0 +1,13 @@
+1649288892040	Delete element
+1649288938821	Delete element
+1649289115561	Rename type 'Pessoa'
+1649425411896	Rename field 'mensalidade_vigente'
+1649425432286	Rename field 'quantidade_aulas_mes'
+1649425447954	Rename field 'valor_aula'
+1649504465919	Extract local variable 'readObject'
+1649510874481	Extract local variable 'readObject'
+1649511745036	Delete element
+1649512365302	Delete element
+1649516578852	Copy compilation unit
+1649519290910	Rename type 'PraticanteNotFound'
+1649519504376	Copy compilation unit

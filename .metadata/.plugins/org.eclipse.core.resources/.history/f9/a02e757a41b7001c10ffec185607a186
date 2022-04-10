@@ -1,0 +1,19 @@
+
+public class Aluno extends Praticante_Jiu_Jitsu {
+	
+	boolean mensalidade_vigente;
+
+	public Aluno(String nome,String CPF, String faixa, boolean mensalidade_vigente) {
+		super(nome, CPF,faixa);
+		this.mensalidade_vigente;
+	}
+
+	public boolean isMensalidade_vigente() {
+		return mensalidade_vigente;
+	}
+
+	public void setMensalidade_vigente(boolean mensalidade_vigente) {
+		this.mensalidade_vigente = mensalidade_vigente;
+	}
+
+}

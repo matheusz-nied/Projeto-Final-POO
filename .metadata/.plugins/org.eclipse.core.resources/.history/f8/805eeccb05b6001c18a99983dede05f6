@@ -1,0 +1,4 @@
+
+public class Aluno extends Praticante_Jiu_Jitsu{
+	boolean mensalidade_vigente;
+}

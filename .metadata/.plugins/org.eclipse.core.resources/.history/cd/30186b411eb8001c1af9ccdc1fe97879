@@ -1,0 +1,67 @@
+import java.io.EOFException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.util.ArrayList;
+
+public class Academia {
+
+	public static void main(String[] args) {
+
+		try {
+			FileUtil.criaArquivosSeNaoExistem();
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+
+		Professor pf1 = new Professor("Matheus", "Roxa", 3, 200.0);
+		pf1.setQuantidadeAulas(10);
+		pf1.setValorAula(200.0);
+		Professor pf2 = new Professor("Aroldo", "Preta", 4, 50.0);
+		pf2.setQuantidadeAulas(1);
+		Professor pf3 = new Professor("Jose", "Azul", 0, 100.0);
+		pf3.setQuantidadeAulas(2);
+		Aluno a1 = new Aluno("Matheus", "Roxa", 3);
+		a1.aumentaQuantidadeGraus();
+		Aluno a2 = new Aluno("Aroldo", "Marrom", 4);
+		a2.aumentaQuantidadeGraus();
+		Aluno a3 = new Aluno("Jose", "Azul", 0);
+
+		try {
+			a2.setMensalidade_vigente(true);
+			a3.setMensalidade_vigente(false);
+		} catch (MensalidadePagaException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		try {
+			FileUtil.writeArquivoDAT(pf1);
+			FileUtil.writeArquivoDAT(pf2);
+			FileUtil.writeArquivoDAT(pf3);
+			FileUtil.writeArquivoDAT(a1);
+			FileUtil.writeArquivoDAT(a2);
+			FileUtil.writeArquivoDAT(a3);
+
+			Praticante_Jiu_Jitsu j = FileUtil.consultaPraticante_Jiu_Jitsu("Matheus");
+			System.out.println("Usuario consultado: " + j);
+
+			FileUtil.excluiPraticante_Jiu_Jitsu("Jose");
+
+
+			FileUtil.updatePraticante_Jiu_Jitsu("Aroldo", new Professor("Aroldinho", "Preta", 4, 250.0));
+			FileUtil.readArquivoDAT();
+
+			// ArrayList<Praticante_Jiu_Jitsu> test = FileUtil.getArquivoDAT();
+			// System.out.println(test);
+		} catch (IOException | ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (PraticanteNotFoundException e) {
+			e.printStackTrace();
+		} catch (PraticanteJaCadastradoException e) {
+			System.out.println("Usuario já Cadastrado!");
+		}
+
+	}
+
+}

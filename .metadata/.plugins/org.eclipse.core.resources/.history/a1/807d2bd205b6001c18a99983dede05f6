@@ -1,0 +1,10 @@
+
+public class Professor extends Praticante_Jiu_Jitsu {
+	public Professor(String nome, String faixa, int quantidade_graus) {
+		super(nome, faixa, quantidade_graus);
+		// TODO Auto-generated constructor stub
+	}
+	double valor_aula;
+	int quantidade_aulas;
+
+}

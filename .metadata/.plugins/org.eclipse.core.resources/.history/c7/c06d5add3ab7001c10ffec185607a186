@@ -1,0 +1,41 @@
+
+public abstract class Praticante_Jiu_Jitsu {
+	protected String nome;
+	protected String CPF;
+	protected String faixa;
+	protected int quantidade_graus;
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getCPF() {
+		return CPF;
+	}
+
+	public String getFaixa() {
+		return faixa;
+	}
+
+	public void setFaixa(String faixa) {
+		this.faixa = faixa;
+	}
+
+	public int getQuantidade_graus() {
+		return quantidade_graus;
+	}
+
+	public void setQuantidade_graus(int quantidade_graus) {
+		this.quantidade_graus = quantidade_graus;
+	}
+
+	public Praticante_Jiu_Jitsu(String nome, String faixa, int quantidade_graus) {
+		this.faixa = faixa;
+		this.quantidade_graus = quantidade_graus;
+	}
+
+}

@@ -1,0 +1,10 @@
+
+public class Aluno extends Praticante_Jiu_Jitsu{
+	boolean mensalidade_vigente;
+
+	public Aluno(String nome, String faixa, int quantidade_graus) {
+		super(nome, faixa, quantidade_graus);
+		// TODO Auto-generated constructor stub
+	}
+
+}

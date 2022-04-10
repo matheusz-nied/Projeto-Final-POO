@@ -1,0 +1,4 @@
+
+public class Professor extends Praticante_Jiu_Jitsu {
+
+}

@@ -1,0 +1,58 @@
+import java.io.Serializable;
+
+public abstract class Praticante_Jiu_Jitsu implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	
+	protected String nome;
+	protected String faixa;
+	protected int quantidadeGraus;
+
+	public Praticante_Jiu_Jitsu(String nome, String faixa, int quantidadeGraus) {
+		this.nome = nome;
+		this.faixa = faixa;
+		this.quantidadeGraus = quantidadeGraus;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getFaixa() {
+		return faixa;
+	}
+
+	public void graduaAluno() {
+		quantidadeGraus = 0;
+		switch (faixa) {
+		case "Branca":
+			this.faixa = "Azul";
+		case "Azul":
+			this.faixa = "Roxa";
+		case "Roxa":
+			this.faixa = "Marrom";
+		case "Marrom":
+			this.faixa = "Preta";
+		case "Preta":
+			this.faixa = "Coral";
+		default:
+			break;
+		}
+
+	}
+
+	public int getQuantidade_graus() {
+		return quantidadeGraus;
+	}
+
+	public void aumentaQuantidadeGraus() {
+		
+			quantidadeGraus += 1;
+		
+	}
+
+}

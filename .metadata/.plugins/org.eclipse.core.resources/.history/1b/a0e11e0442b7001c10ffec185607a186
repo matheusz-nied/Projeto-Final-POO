@@ -1,0 +1,29 @@
+
+public class Professor extends Praticante_Jiu_Jitsu {
+	
+	double valorAula;
+	int quantidadeAulasMes;
+	
+	public Professor(String nome,String CPF, String faixa) {
+		super(nome, CPF,faixa);
+		// TODO Auto-generated constructor stub
+	}
+
+	public double getValor_aula() {
+		return valorAula;
+	}
+
+	public void setValor_aula(double valorAula) {
+		this.valorAula = valorAula;
+	}
+
+	public int getQuantidadeAulas() {
+		return quantidadeAulasMes;
+	}
+
+	public void setQuantidade_aulas(int quantidadeAulasMes) {
+		this.quantidadeAulasMes = quantidadeAulasMes;
+	}
+	
+
+}

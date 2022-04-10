@@ -1,0 +1,6 @@
+
+public abstract class Praticante_Jiu_Jitsu {
+	String faixa;
+	int quantidade_graus;
+
+}
