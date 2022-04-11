@@ -1,5 +1,7 @@
+## Projeto final Orientação a Objetos
+
 Projeto final da matéria de Orientação a Objetos da faculdade.
-Neste projeto deviamos criar um software para trabalhar os assuntos tratados no decorrer do semestre.
+Neste projeto deviamos criar um software para trabalhar os assuntos tratados no decorrer do semestre utilizando a linguagem JAVA.
 O projeto devia conter os seguintes tópicos.
 
 - [x]  Pelo menos 3 classes de dados com relacionamentos entre elas (sem contar com a classe
