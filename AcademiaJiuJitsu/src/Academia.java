@@ -1,4 +1,7 @@
+import java.io.EOFException;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.util.ArrayList;
 
 public class Academia {
 
@@ -7,7 +10,6 @@ public class Academia {
 		try {
 			FileUtil.criaArquivosSeNaoExistem();
 		} catch (IOException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 
